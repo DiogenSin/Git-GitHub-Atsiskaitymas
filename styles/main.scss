@@ -1,0 +1,198 @@
+@media screen and (max-width: 680px) {
+body {
+    margin: 0px;
+    background-image: url(../resources/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+
+    #overlay {
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-image: url(../resources/bg-overlay.png);
+        background: rgba(0, 0, 0, 0.397);
+        height: 100vh;
+        z-index:1;
+    }
+
+    main {
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        hr {
+            width: 95%;
+            border: none;
+            height: 2px;
+            background-color: rgba(255, 255, 255, 0.411);
+            margin: 0px;
+        }
+
+        .vertical {
+            border-left: 2px solid rgba(255, 255, 255, 0.411);
+            height:50px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #logo {
+            height: 35px;
+            width: 35px;
+            border: 2px solid rgba(255, 255, 255, 0.411);
+            padding: 15px;
+            border-radius: 50px;
+        }
+
+        #text {
+            width: 95%;
+            padding: 10px 0px;
+            text-transform: uppercase;
+
+            p {
+                text-align: left;
+                color: rgba(255, 255, 255, 0.767);
+
+                a {
+                    text-decoration: underline dotted;
+                    color: rgba(255, 255, 255, 0.767);
+                }
+                a:hover {
+                    text-decoration: underline dotted;
+                    color: rgba(255, 255, 255, 0.938);
+                }
+            }
+        }
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+        
+        button {
+            width: 95%;
+            background-color: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.411);
+            color: rgba(255, 255, 255, 0.767);
+            padding: 10px 0px;
+            text-transform: uppercase;
+        }
+        button:hover {
+            background-color: rgba(255, 255, 255, 0.281);
+        }
+    }
+}
+}
+
+@media screen and (min-width: 681px){
+    body {
+        margin: 0px;
+        background-image: url(../resources/bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        padding: 0px 3vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    
+        #overlay {
+            position:absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            background-image: url(../resources/bg-overlay.png);
+            background: rgba(0, 0, 0, 0.397);
+            height: 100vh;
+            z-index:1;
+        }
+    
+        main {
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+    
+            hr {
+                width: 95%;
+                border: none;
+                height: 2px;
+                background-color: rgba(255, 255, 255, 0.411);
+                margin: 0px;
+            }
+    
+            .vertical {
+                border-left: 2px solid rgba(255, 255, 255, 0.411);
+                height:50px;
+                margin: 0px;
+                padding: 0px;
+            }
+    
+            #logo {
+                height: 35px;
+                width: 35px;
+                border: 2px solid rgba(255, 255, 255, 0.411);
+                padding: 25px;
+                border-radius: 50px;
+            }
+    
+            #text {
+                width: 95%;
+                padding: 10px 0px;
+                text-transform: uppercase;
+    
+                p {
+                    text-align: center;
+                    color: rgba(255, 255, 255, 0.767);
+    
+                    a {
+                        text-decoration: underline dotted;
+                        color: rgba(255, 255, 255, 0.767);
+                    }
+                    a:hover {
+                        text-decoration: underline dotted;
+                        color: rgba(255, 255, 255, 0.938);
+                    }
+                }
+            }
+        }
+    
+        nav {
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            z-index: 2;
+            
+            button {
+                width: 100%;
+                background-color: transparent;
+                border: 2px solid rgba(255, 255, 255, 0.411);
+                color: rgba(255, 255, 255, 0.767);
+                padding: 10px 0px;
+                text-transform: uppercase;
+            }
+            button:hover {
+                background-color: rgba(255, 255, 255, 0.281);
+            }
+        }
+    }
+    }
