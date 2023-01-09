@@ -5,6 +5,8 @@ introBtn.addEventListener('click', e => {
     e.preventDefault()
     console.log(e)
     document.getElementById('introTab').classList.remove('hide')
+    document.querySelector('main').classList.add('hide') // paslepia homepage turinį
+    document.querySelector('nav').classList.add('hide')
 })
 
 let workBtn = document.getElementById('work')
